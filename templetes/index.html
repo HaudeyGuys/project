@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiwariauto</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body class="fullbody">
+    <section id="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">TiwariAuto</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">SALES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">STOCKS</a>
+                </li>
+            </ul>     
+        </nav>      
+    </section>
+    <section id="SaleSection">
+        <h2>SALES</h2>         
+        <form action="#">
+            {% csrf_token %}
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="carowner">Email</label>
+                    <input type="text" class="form-control" id="carowner" placeholder="ShopName or Car Owner Name">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="carNO">Car Number</label>
+                    <input type="text" class="form-control" id="carNO" placeholder="Car Number">
+                  </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="Phoneno">Phone No</label>
+                    <input type="text" class="form-control" id="PhoneNo" placeholder="Phone Number">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="emailaddress">Email</label>
+                  <input type="email" class="form-control" id="emailaddress" placeholder="Email Address">
+                </div>
+            </div>    
+            <div class="form-row ml-auto">
+                <label for="item">Items</label>
+                <table class="tables">
+                    <tr>
+                        <td>Item Name</td>
+                        <td><input type="text" name="itemname" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td>Quantity</td>
+                        <td><input type="text" name="quantity" size="20"></td>
+                        <td><button type="button" >ADD</button></td>
+                    </tr>
+                    <tr>
+                        <td>Rate</td>
+                        <td><input type="text" name="rate" size="20"></td>
+                    </tr>        
+                </table>
+            </div>
+              </form>
+        </div>
+     
+    </section>
+</body>
+</html>
