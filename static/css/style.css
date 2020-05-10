@@ -1,0 +1,20 @@
+.navbar{
+    padding: 20px;
+}
+.navbar-brand{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 29px;
+    margin-left: 3rem;
+}
+.nav-item{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.fullbody {
+    background-color: turquoise;
+}
+.tables{
+    margin-left:10px;
+}
